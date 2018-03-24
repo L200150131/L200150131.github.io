@@ -40,16 +40,11 @@
         padding: 0;
       }
     </style>
-
   </head>
   <body>
-    <ul>
-      <li><a href="index.html">Serambi</a></li>
-       <li style="float: right; display: inline-block; color: white;padding: 14px 16px; text-align: center;">
-        LOKASI RUMAH 
-      </li>
-    </ul>
-    <center><h3>L200150131 - Jajar Laweyan Surakarta</h3></center>
+    <center>
+	<h3>Indri Jajar</h3>
+	</center>
     <div id="map"></div>
     <script>
       function initMap() {
@@ -58,23 +53,22 @@
           zoom: 16,
           center: rumahku
         });
-          var info = '<h3>Alamat Rumah</h3>'+
-            '<p>Jajar Rt.03 Rw. VI,</br>Kecamatan Laweyan, Surakarta.</p>';
+		var info = '<h3>Alamat Rumah</h3>'+
+            '<p>Jajar RT.03 RW. VI  ,</br>Kecamatan Laweyan Surakarta.</p>';
 
         var infowindow = new google.maps.InfoWindow({
           content: info
         });
+
         var marker = new google.maps.Marker({
           position: rumahku,
           map: map
-         });
-        marker.addListener('click', function() {
-          infowindow.open(map, marker);
-        });
+		  
+		});
       }
     </script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key= AIzaSyB4wVs6wV19DVtOfinFC4DSYhx2g1CgZ84&callback=initMap">
-    </script>
-  </body>
+    </script><br>
+	  </body>
 </html>
