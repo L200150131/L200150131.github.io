@@ -47,9 +47,19 @@
           zoom: 16,
           center: rumahku
         });
+          var info = '<h3>Alamat Rumah</h3>'+
+            '<p>Jajar Rt.03 Rw. VI,</br>Kecamatan Laweyan, Surakarta.</p>';
+
+        var infowindow = new google.maps.InfoWindow({
+          content: info
+        });
         var marker = new google.maps.Marker({
           position: rumahku,
           map: map
+          title: "Rumahku"
+        });
+        marker.addListener('click', function() {
+          infowindow.open(map, marker);
         });
       }
     </script>
