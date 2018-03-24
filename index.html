@@ -1,17 +1,88 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>SISTEM INFORMASI GEOGRAFIS - INDRI KUSDIYANTO</title>
-	</head>
-	<body>
-		<center>
-			<h2>Tugas Mata Kuliah Sistem Informasi Geografis</h2>
-			<h3>INDRI KUSDIYANTO - L200150131<br>Kelas A</h3><br><br>
-			<input onclick="window.location.href='TUGAS 1.html'" type="submit" value="TUGAS 1"></input>
-			--
-			<input onclick="window.location.href='TUGAS 2.html'" type="submit" value="TUGAS 2"></input>
-			--
-			<input onclick="window.location.href='TUGAS 3.html'" type="submit" value="TUGAS 3"></input>
-		</center>
-	</body>
+<head>
+<title>Sistem Informasi Geografis</title>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+li {
+    float: left;
+}
+li a.active {
+    background-color: #006633;
+    color: white;
+}
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #006633;
+}
+li.dropdown {
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {background-color: #C0C0C0}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+body {
+    margin: 0;
+    background-image: url("back.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.content {
+    margin-left: 100px;
+    padding-top: 200px;
+    color: #F0F0F0;
+    text-align: center;
+    line-height: 1;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="TUGAS 1.html">Adding TUGAS 1</a></li>
+  <li class="dropdown">
+    <a href="#" class="dropbtn">Visualization</a>
+    <div class="dropdown-content">
+      <a href="TUGAS 2.html">TUGAS 2</a>
+      <a href="TUGAS 3.html">TUGAS 3</a>
+      <a href="TUGAS 4.html">TUGAS 4</a>
+    </div>
+  </li>
+</ul>
+
+<div class="content">
+  <h1 style="font-size: 30pt;">Selamat Datang</h1>
+
+</div>
+
+</body>
 </html>
