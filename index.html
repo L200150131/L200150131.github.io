@@ -1,31 +1,17 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <style>
-       #map {
-        height: 500px;
-        width: 100%;
-       }
-    </style>
-  </head>
-  <body>
-    <center><h3>L200150131 - Jajar</h3></center>
-    <div id="map"></div>
-    <script>
-      function initMap() {
-        var rumahku = {lat: -7.5528197, lng: 110.7829548}; 
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 16,
-          center: rumahku
-        });
-        var marker = new google.maps.Marker({
-          position: rumahku,
-          map: map
-        });
-      }
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key= AIzaSyB4wVs6wV19DVtOfinFC4DSYhx2g1CgZ84&callback=initMap">
-    </script>
-  </body>
+	<head>
+		<title>SISTEM INFORMASI GEOGRAFIS - SUPRIYADI</title>
+	</head>
+	<body>
+		<center>
+			<h2>Tugas Mata Kuliah Sistem Informasi Geografis</h2>
+			<h3>INDRI KUSDIYANTO - L200150131<br>Kelas A</h3><br><br>
+			<input onclick="window.location.href='TUGAS1.html'" type="submit" value="TUGAS 1"></input>
+			--
+			<input onclick="window.location.href='TUGAS2.html'" type="submit" value="TUGAS 2"></input>
+			--
+			<input onclick="window.location.href='TUGAS3.html'" type="submit" value="TUGAS 3"></input>
+		</center>
+	</body>
 </html>
