@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
- <head>
-     <style>
+  <head>
+    <title>Adding Marker</title>
+    <style>
       ul {
         list-style-type: none;
         margin: 0;
@@ -39,41 +40,44 @@
         margin: 0;
         padding: 0;
       }
-  </style>
+    </style>
   </head>
   <body>
     <ul>
       <li><a href="index.html">Serambi</a></li>
       <li style="float: right; display: inline-block; color: white;padding: 14px 16px; text-align: center;">
-        LOKASI RUMAH
+        LOKASI RUMAH 
       </li>
     </ul>
-       <center>
-	<h3>Indri Kusdiyanto - L200150131. Jajar</h3>
-	</center>
+
     <div id="map"></div>
     <script>
       function initMap() {
-        var rumahku = {lat: -7.5529082, lng: 110.7829858}; 
+        var myHome = {lat: -7.5529082, lng: 110.7829858};
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 20,
-          center: rumahku
+          zoom: 16,
+          center: myHome
         });
-	var info = '<h3>Alamat Rumah</h3>'+
-            '<p>Jajar RT.03 RW. VI  ,</br>Kecamatan Laweyan Surakarta.</p>';
+
+        var info = '<h3>Alamat Rumah</h3>'+
+            '<p>Jajar RT.03 RW.06,</br>Kecamatan laweyan, Surakarta.</p>';
 
         var infowindow = new google.maps.InfoWindow({
           content: info
         });
 
         var marker = new google.maps.Marker({
-          position: rumahku,
-          map: map	  
-	});
+          position: myHome,
+          map: map,
+          title: "My Home"
+        });
+        marker.addListener('click', function() {
+          infowindow.open(map, marker);
+        });
       }
     </script>
     <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key= AIzaSyB4wVs6wV19DVtOfinFC4DSYhx2g1CgZ84&callback=initMap">
     </script>
- </body>
+    src="https://maps.googleapis.com/maps/api/js?key= AIzaSyDCJnrlu-8aOoKdqtTlhqhjG7dif1UzAE0&callback=initMap">
+  </body>
 </html>
